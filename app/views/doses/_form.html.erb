@@ -1,5 +1,6 @@
 <%= simple_form_for [@cocktail, @dose], url: cocktail_doses_path do |f| %>
   <%= f.input :ingredient, collection: @ingredients %>
   <%= f.input :description %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.button :submit, class: "btn btn-default btn-block text-center" %>
 <% end %>
