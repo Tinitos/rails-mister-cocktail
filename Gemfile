@@ -37,7 +37,7 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 1.2'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
