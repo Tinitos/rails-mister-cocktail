@@ -5,7 +5,7 @@
 <div class="description"><%=@cocktail.description%></div>
 <h2 class="text-center">Composition</h2>
 <% if @cocktail.doses.length == 0 %>
-  <h3 class="text-center">No doses yet :-(</h3>
+  <h3 class="text-center">No doses yet 😕</h3>
 <% else %>
   <div class="cards-wrapper">
     <div class="container">
@@ -16,7 +16,7 @@
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(<%= 'http://www.thecocktaildb.com/images/ingredients/' + dose.ingredient.name.gsub(' ', '%20') + '.png'%>);">
               <div class="card-delete"><%= link_to '<i class="fa fa-times"></i>'.html_safe, cocktail_dose_path(@cocktail, dose),
           method: :delete,
-          data: { confirm: "Are you sure?" } %></div>
+          data: { confirm: "Are you sure? Only delete if necessary!" } %></div>
               <div class="card-title text-center"><%= dose.ingredient.name.upcase %></div>
               <div class="card-description text-center"><%= dose.description %></div>
               <div class="card-link"></div>
